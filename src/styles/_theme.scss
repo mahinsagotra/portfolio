@@ -1,0 +1,40 @@
+@import './media';
+@import './variables';
+
+.theme-switcher {
+	position: fixed;
+	left: 0px;
+	bottom: 100px;
+	transform: rotateZ(90deg);
+
+	@include media-sm {
+		left: -35px;
+	}
+}
+
+.theme-options {
+	display: flex;
+	gap: 0.25rem;
+
+	div {
+		cursor: pointer;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		margin: 2px 10px;
+		border: 2px solid $black;
+
+		&.active {
+			border: 2px solid #f25042;
+		}
+	}
+}
+#theme-1 {
+	background: #fffffe;
+}
+#theme-2 {
+	background: #fef6e4;
+}
+#theme-4 {
+	background: #16161a;
+}

@@ -1,0 +1,85 @@
+@import './media';
+@import './variables';
+
+// General Settings
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	line-height: 1.5;
+	background: var(--background);
+	scroll-behavior: smooth;
+}
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+	color: var(--headline);
+}
+h1 {
+	font-size: 3rem;
+	line-height: 1.2;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1.25rem;
+}
+h4 {
+	font-size: 0.875rem;
+}
+p,
+li {
+	color: var(--paragraph);
+}
+button,
+.button {
+	margin-top: 20px;
+	padding: 10px 35px;
+	border-radius: 50px;
+	background: transparent;
+	color: var(--headline);
+	border: 2px solid var(--button);
+	transition: $transition;
+}
+button:hover,
+.button:hover {
+	background: var(--button);
+	color: var(--button-text);
+	cursor: pointer;
+}
+@include media-sm {
+	h1 {
+		font-size: 1.75rem;
+		line-height: 1;
+	}
+	h2 {
+		font-size: 1.5rem;
+	}
+	h3 {
+		font-size: 1rem;
+	}
+	h4 {
+		font-size: 0.65rem;
+	}
+}
+@include media-xl {
+	body {
+		text-align: -webkit-center;
+	}
+	#root {
+		max-width: 1800px;
+	}
+}

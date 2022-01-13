@@ -1,0 +1,160 @@
+@import './media';
+@import './variables';
+
+.intro {
+	background-color: var(--background);
+	display: flex;
+	flex-direction: column;
+	min-height: calc(100vh - 100px);
+	align-items: center;
+	margin: auto;
+	justify-content: center;
+	margin-top: -1rem;
+
+	@include media-sm {
+		min-height: calc(100vh - 50px);
+	}
+
+	.left {
+		.wrapper {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+
+			@include media-sm {
+				padding: 1.5rem 0.5rem;
+			}
+
+			h1 {
+				margin: 0;
+				font-size: 64px;
+				font-weight: 700;
+				line-height: 56px;
+				color: var(--headline);
+
+				@include media-sm {
+					font-size: 32px;
+					text-align: center;
+					line-height: 36px;
+				}
+			}
+
+			.last-line {
+				color: var(--button);
+			}
+
+			p {
+				text-align: center;
+				margin: 15px 0 0 0;
+				font-size: 26px;
+				font-family: 'Poppins', sans-serif;
+
+				@include media-sm {
+					font-size: 20px;
+				}
+			}
+
+			.location {
+				margin-top: 0;
+				margin-bottom: 1rem;
+			}
+
+			h3 {
+				font-size: 30px;
+
+				@include media-sm {
+					font-size: 20px;
+				}
+			}
+
+			.social-links ul {
+				display: flex;
+				gap: 1rem;
+
+				.icons {
+					font-size: 1.5rem;
+
+					svg {
+						fill: var(--headline);
+						opacity: 0.75;
+
+						&:hover {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+		.arrow {
+			display: flex;
+			justify-content: center;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: -webkit-fill-available;
+			margin-bottom: 2rem;
+			zoom: 0.6;
+
+			@include media-lg {
+				margin-top: 1rem;
+			}
+		}
+	}
+}
+
+@keyframes ani-mouse {
+	0% {
+		opacity: 1;
+		top: 29%;
+	}
+	15% {
+		opacity: 1;
+		top: 50%;
+	}
+	50% {
+		opacity: 0;
+		top: 50%;
+	}
+	100% {
+		opacity: 0;
+		top: 29%;
+	}
+}
+
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+	color: var (--paragraph);
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+	position: relative;
+	display: block;
+	width: 35px;
+	height: 55px;
+	box-sizing: border-box;
+	border: 3px solid var(--paragraph);
+	border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+	position: absolute;
+	display: block;
+	top: 29%;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+	background: var(--paragraph);
+	border-radius: 50%;
+	animation: ani-mouse 2.5s linear infinite;
+}

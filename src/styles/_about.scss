@@ -1,0 +1,46 @@
+@import './media';
+@import './variables';
+
+.about {
+	margin-top: 6rem !important;
+
+	.content {
+		gap: 1rem;
+
+		.font-italic {
+			letter-spacing: 0.05rem;
+			margin-bottom: 2rem;
+			text-align: center;
+
+			@include media-lg {
+				font-size: 1.25rem;
+			}
+		}
+
+		h2 {
+			text-align: center;
+		}
+
+		.skills .list {
+			margin-top: 0.5rem;
+			margin-bottom: 3rem;
+			display: flex;
+			gap: 1rem;
+			flex-wrap: wrap;
+			justify-content: center;
+
+			li {
+				padding: 0.25rem;
+				transition: $transition;
+
+				&:hover {
+					transform: scale(1.25);
+				}
+			}
+
+			img {
+				width: 50px;
+			}
+		}
+	}
+}

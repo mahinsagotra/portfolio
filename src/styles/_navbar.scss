@@ -1,0 +1,148 @@
+@import './media';
+@import './variables';
+
+//Navbar
+.navbar {
+	position: sticky;
+	background: transparent;
+	top: 0;
+	z-index: 99;
+}
+
+.navbar.nav-active {
+	background-color: var(--tertiary);
+
+	.nav-link a {
+		&.active,
+		&:hover {
+			color: var(--background) !important;
+			opacity: 1;
+		}
+	}
+}
+
+.nav-center {
+	.nav-header {
+		padding: 0 2rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo {
+		font-family: 'Shadows Into Light', cursive;
+		font-size: 1.25rem;
+		text-decoration: underline;
+		letter-spacing: $spacing;
+	}
+
+	@include media-lg {
+		.logo {
+			font-size: 2rem;
+		}
+	}
+
+	.nav-toggle {
+		font-size: 1.5rem;
+		background: transparent;
+		border-color: transparent;
+		transition: $transition;
+		cursor: pointer;
+
+		&.toggle-active {
+			transform: rotate(90deg);
+			color: var(--headline) !important;
+		}
+	}
+
+	.links-container {
+		overflow: hidden;
+		transition: $transition;
+		width: -webkit-fill-available;
+		position: absolute;
+		z-index: 999;
+		text-align: center;
+		background: var(--tertiary);
+	}
+
+	.links {
+		display: inline-flex;
+		align-items: center;
+
+		.nav-link {
+			cursor: pointer;
+
+			a {
+				color: var(--headline);
+				text-transform: uppercase;
+				letter-spacing: $spacing;
+				font-weight: 500;
+				opacity: 0.7;
+			}
+		}
+	}
+}
+
+@include media-sm {
+	.nav-center {
+		margin-top: 0.5rem;
+
+		.nav-toggle {
+			margin-top: 0.5rem;
+			padding: 0;
+
+			&:hover {
+				color: var(--headline);
+			}
+		}
+
+		.links-container {
+			height: 0;
+		}
+
+		.links {
+			row-gap: 0.5rem;
+			flex-direction: column;
+			padding: 3rem;
+
+			.nav-link a {
+				&.active,
+				&:hover {
+					color: var(--background);
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+@include media-lg {
+	.nav-center {
+		padding: 0 2rem;
+		margin: 0.5rem auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.nav-toggle {
+			display: none;
+		}
+		.links-container {
+			height: auto;
+			display: contents;
+		}
+		.links {
+			column-gap: 1.5rem;
+			flex-direction: row;
+			padding: 0;
+			margin-top: 0.5rem;
+
+			.nav-link a {
+				&.active,
+				&:hover {
+					color: var(--button);
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
