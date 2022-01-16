@@ -14,7 +14,7 @@ const Intro = () => {
 	};
 
 	return (
-		<section className='Intro' id='intro'>
+		<section className='intro' id='intro'>
 			<div className='theme-switcher'>
 				<Theme colorTheme={colorTheme} setColorTheme={setColorTheme} />
 			</div>
