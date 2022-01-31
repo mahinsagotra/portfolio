@@ -44,7 +44,7 @@ const Projects = () => {
 		}
 	}, [selected]);
 	return (
-		<section>
+		<section className='projects section' id='projects'>
 			<div className='projects section' id='projects'>
 				<div className='container'>
 					<div className='section-title'>

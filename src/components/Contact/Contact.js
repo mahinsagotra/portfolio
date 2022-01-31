@@ -5,13 +5,13 @@ const API_KEY = process.env.FORM_API_KEY;
 const ContactForm = () => {
 	return (
 		<>
-			<section id='contact' className='contact  section'>
+			<section id='contact' className='contact section'>
 				<div className='container'>
 					<div className='section-title'>
 						<h1>Contact</h1>
 					</div>
 					<div className='content'>
-						<form action={API_KEY} method='POST' id='email-from'>
+						<form action={API_KEY} method='POST' id='email-form'>
 							<div className='form-group'>
 								<input
 									type='text'

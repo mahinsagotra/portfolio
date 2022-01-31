@@ -24,7 +24,7 @@ const Intro = () => {
 					<h1>
 						Mahin <span className='last-name'>Sagotra</span>
 					</h1>
-					<p className='role'>Front-end Developer</p>
+					<p className='role'>Front-End Developer</p>
 					<p className='location'>from Jammu.</p>
 					<div className='social-links'>
 						<ul>

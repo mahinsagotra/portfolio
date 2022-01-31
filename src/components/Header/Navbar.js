@@ -46,7 +46,7 @@ const Navbar = () => {
 						<button
 							className={`${
 								showLinks
-									? 'nac-toogle toggle-active'
+									? 'nav-toggle toggle-active'
 									: 'nav-toggle'
 							}`}
 							onClick={() => setShowLinks(!showLinks)}

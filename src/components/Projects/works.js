@@ -2,7 +2,7 @@ export const projectList = [
 	{
 		id: 1,
 		name: 'blogApp',
-		image: '',
+		image: 'assets/img/portfolio/blogApp.png',
 		mockup: '',
 		category: 'website',
 		subCategory: 'full stack',
@@ -25,7 +25,7 @@ export const projectList = [
 	{
 		id: 2,
 		name: 'Chat App',
-		image: '',
+		image: 'assets/img/portfolio/chatApp.png',
 		mockup: '',
 		category: 'website',
 		subCategory: 'full  stack',
@@ -48,7 +48,7 @@ export const projectList = [
 	{
 		id: 3,
 		name: 'Color Game',
-		image: '',
+		image: 'assets/img/portfolio/colorGame.png',
 		mockup: '',
 		category: 'app',
 		technology: 'HTML, CSS, Javascript',
@@ -70,7 +70,7 @@ export const projectList = [
 	{
 		id: 4,
 		name: 'Markdown Editor',
-		image: '',
+		image: 'assets/img/portfolio/markdown.png',
 		mockup: '',
 		category: 'app',
 		technology: 'HTML, CSS, React, Styled-Components',
@@ -92,7 +92,7 @@ export const projectList = [
 	{
 		id: 5,
 		name: 'Todo-Application',
-		image: '',
+		image: 'assets/img/portfolio/todo.png',
 		mockup: '',
 		category: 'app',
 		technology: 'HTML, CSS, EJS, Express, Lodash, Mongoose',
@@ -133,32 +133,32 @@ export const projectList = [
 		description:
 			'Flappy Bird is an arcade-style game in which the player controls the bird Faby, which moves persistently to the right. The player is tasked with navigating Faby through pairs of pipes that have equally sized gaps placed at random heights.',
 	},
-	{
-		id: 7,
-		name: 'Github Jobs',
-		image: '',
-		mockup: '',
-		category: 'app',
-		technology: 'HTML, CSS, React, Axios, Bootstrap',
-		links: [
-			{
-				id: 1,
-				text: 'demo',
-				url: '',
-			},
-			{
-				id: 2,
-				text: 'Github',
-				url: 'https://github.com/mahinsagotra/Github_Jobs',
-			},
-		],
-		description:
-			'A react app that uses Axios & react-bootstrap to fetch data from Github Jobs API and show the jobs that are available on the Github.',
-	},
+	// {
+	// 	id: 7,
+	// 	name: 'Github Jobs',
+	// 	image: '',
+	// 	mockup: '',
+	// 	category: 'app',
+	// 	technology: 'HTML, CSS, React, Axios, Bootstrap',
+	// 	links: [
+	// 		{
+	// 			id: 1,
+	// 			text: 'demo',
+	// 			url: '',
+	// 		},
+	// 		{
+	// 			id: 2,
+	// 			text: 'Github',
+	// 			url: 'https://github.com/mahinsagotra/Github_Jobs',
+	// 		},
+	// 	],
+	// 	description:
+	// 		'A react app that uses Axios & react-bootstrap to fetch data from Github Jobs API and show the jobs that are available on the Github.',
+	// },
 	{
 		id: 8,
 		name: 'Breaking Bad App',
-		image: '',
+		image: 'assets/img/portfolio/breakingBad.png',
 		mockup: '',
 		category: 'app',
 		technology: 'HTML, CSS, React, Axios',
@@ -180,7 +180,7 @@ export const projectList = [
 	{
 		id: 9,
 		name: 'Photo Gallery',
-		image: '',
+		image: 'assets/img/portfolio/photoGallery.png',
 		mockup: '',
 		category: 'app',
 		technology: 'HTML, CSS',

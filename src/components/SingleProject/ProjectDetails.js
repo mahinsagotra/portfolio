@@ -28,7 +28,15 @@ const Project = () => {
 
 	return (
 		<section className='single-project section'>
-			<div clasName='container'>
+			<div
+				clasName='container'
+				style={{
+					flexDirection: 'column',
+					display: 'flex',
+					alignItems: 'center',
+					justifyContent: 'center',
+				}}
+			>
 				<div className='section-title'>
 					<h1>{name}</h1>
 				</div>
@@ -47,7 +55,7 @@ const Project = () => {
 								<h3>Technology: </h3>
 								<ul className='list'>
 									{iconBuilder(technology).map((image) => {
-										const { id, url, text } = image;
+										const { id, url, text } = image || {};
 										return (
 											<li key={id}>
 												<img src={url} alt={text} />
