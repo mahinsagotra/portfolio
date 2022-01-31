@@ -14,7 +14,7 @@ const Project = () => {
 		specificProject[0];
 
 	const iconBuilder = (tech) => {
-		let icons = tech.split(',');
+		let icons = tech.split(", ");
 		let images = [];
 		icons.map((icon) =>
 			images.push(
@@ -41,7 +41,7 @@ const Project = () => {
 					<h1>{name}</h1>
 				</div>
 				<div className='content'>
-					<div className='mockup'>
+					<div className='mockup' hidden>
 						<img src={mockup} alt={`${name}-mockup`} width='100%' />
 					</div>
 					<div className='details'>

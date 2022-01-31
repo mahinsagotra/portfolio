@@ -3,7 +3,7 @@ import React from 'react';
 import About from '../components/About/About';
 import Navbar from '../components/Header/Navbar';
 import Intro from '../components/Intro/Intro';
-import Contact from '../components/Contact/Contact';
+//import Contact from '../components/Contact/Contact';
 import Projects from '../components/Projects/Projects';
 import Footer from '../components/Footer/Footer';
 
@@ -17,7 +17,7 @@ export default function Home() {
 				<Intro />
 				<About />
 				<Projects />
-				<Contact />
+				{/* <Contact /> */}
 			</div>
 			<Footer />
 		</div>

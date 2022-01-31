@@ -11,7 +11,7 @@ export const skills = [
 	},
 	{
 		id: 3,
-		url: 'assets/img/skills/js.png',
+		url: 'assets/img/skills/javascript.png',
 		text: 'Javascript',
 	},
 	{
